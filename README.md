@@ -2,13 +2,15 @@
 
 #### 1. Copy files
 
+Login on npm with: ```npm login```, this will create/update your ```~/.npmrc``` file.
+
 Execute these commands inside same folder as the ```Dockerfile```:
 
 ```
 $ cp -R ~/.ssh .ssh # ssh keys
 $ cp ~/.gitconfig . # git user infos 
 $ cp ~/.netrc . # git credentials
-$ cp ~/.npmrc . # npm credentials. Run 'touch .npmrc' if it doesn't exists
+$ cp ~/.npmrc . # npm credentials.
 ``` 
 
 #### 2. Configure
@@ -33,7 +35,6 @@ Inside the same folder as the ```docker-compose.yml```:
 ```
 $ docker-compose build app
 $ docker-compose run app /bin/sh
-~app $ npm login # if necessary
 ~app $ npm init
 ~app $ lerna init
 ```
