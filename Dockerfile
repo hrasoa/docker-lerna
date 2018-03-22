@@ -16,5 +16,3 @@ RUN chown node /home/node/.netrc && \
     chown node /home/node/.gitconfig && \
     chown node /home/node/.npmrc && \
     chown -R node /home/node/.ssh
-
-USER node
