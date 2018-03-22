@@ -7,10 +7,12 @@ Login on npm with: ```npm login```, this will create/update your ```~/.npmrc``` 
 Execute these commands inside same folder as the ```Dockerfile```:
 
 ```
-$ cp -R ~/.ssh .ssh # ssh keys
-$ cp ~/.gitconfig . # git user infos 
-$ cp ~/.netrc . # git credentials
-$ cp ~/.npmrc . # npm credentials.
+$ git clone git@github.com:hrasoa/docker-lerna.git
+$ cd docker-lerna
+$ cp -R ~/.ssh .ssh     # ssh keys
+$ cp ~/.gitconfig .     # git user infos 
+$ cp ~/.netrc .         # git credentials
+$ cp ~/.npmrc .         # npm credentials.
 ``` 
 
 #### 2. Configure
